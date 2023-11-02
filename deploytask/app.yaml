@@ -1,0 +1,14 @@
+runtime: python27
+threadsafe: true
+
+handlers:
+- url: /src
+  static_dir: src
+
+- url: /
+  static_files: index.html
+  upload: index.html
+
+- url: /style.css
+  static_files: style.css
+  upload: style.css
